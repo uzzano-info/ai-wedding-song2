@@ -1350,10 +1350,56 @@ img {
   opacity: 0.5;
 }
 
+/* === Floating CTA === */
+.floating-cta {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-cta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.floating-icon {
+  font-size: 1.2rem;
+}
+
+.floating-text {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 16px;
+  }
+  
+  .scroll-top {
+    bottom: 80px;
+    right: 20px;
+  }
+}
+
 /* === Scroll-to-top === */
 .scroll-top {
   position: fixed;
-  bottom: 32px;
+  bottom: 96px;
   right: 32px;
   width: 48px;
   height: 48px;

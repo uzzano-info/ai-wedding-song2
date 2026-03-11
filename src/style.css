@@ -469,6 +469,30 @@ img {
   font-size: 0.9rem;
 }
 
+/* === Emotional Trigger === */
+.section-emotion {
+  background: var(--color-bg);
+}
+
+.emotion-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.emotion-text p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 2;
+  margin-bottom: 16px;
+  word-break: keep-all;
+}
+
+.emotion-highlight {
+  font-size: 1.2rem;
+  color: var(--color-text) !important;
+  margin: 28px 0 !important;
+}
+
 /* === Solution Section (Dark) === */
 .section-solution {
   background: var(--color-primary);
@@ -628,6 +652,40 @@ img {
   line-height: 1.7;
 }
 
+/* === Usage Scenarios === */
+.section-scenes {
+  background: var(--color-bg);
+}
+
+.scene-card {
+  text-align: center;
+  padding: 32px 20px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.scene-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.scene-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.scene-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.scene-card p {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
 /* === Portfolio / Samples === */
 .section-samples {
   background: var(--color-surface);
@@ -731,6 +789,68 @@ img {
   line-height: 1.6;
   max-width: 260px;
   margin: 0 auto;
+}
+
+/* === Process Timeline === */
+.process-timeline {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.timeline-bar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.timeline-bar::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: var(--color-border);
+}
+
+.timeline-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.timeline-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.timeline-notice {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .process-compare {
@@ -1118,6 +1238,51 @@ img {
   flex-shrink: 0;
 }
 
+/* === Reviews / Social Proof === */
+.section-reviews {
+  background: var(--color-surface);
+}
+
+.rating-badge {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin: 0;
+  text-align: left;
+  font-style: normal;
+  transition: var(--transition);
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.review-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
 /* === CTA Section === */
 .section-cta {
   background: var(--color-primary);
@@ -1125,6 +1290,21 @@ img {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.cta-anchor {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  opacity: 0.85;
+  max-width: 500px;
+  margin: 0 auto 12px;
+  word-break: keep-all;
+}
+
+.cta-sub {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 32px;
 }
 
 .section-cta::before {

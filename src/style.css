@@ -733,6 +733,140 @@ img {
   margin: 0 auto;
 }
 
+.process-compare {
+  margin-top: 64px;
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 1px solid var(--color-border);
+}
+
+.process-compare h3 {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.compare-table-wrapper {
+  overflow-x: auto;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9rem;
+  min-width: 700px;
+}
+
+.compare-table th {
+  background: var(--color-surface);
+  padding: 16px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.compare-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.compare-table tr:last-child td {
+  border-bottom: none;
+}
+
+.compare-table .highlight-row td {
+  background: rgba(167, 146, 119, 0.05);
+}
+
+.compare-table .highlight-row td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.compare-table .highlight-row td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+/* === Flowchart === */
+.flowchart-container {
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.flow-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 860px;
+}
+
+.flow-col-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 280px;
+}
+
+.flow-branches {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.flow-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.branch-label {
+  font-weight: 700;
+  font-family: var(--font-serif);
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.flow-step {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+  color: var(--color-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  line-height: 1.5;
+}
+
+.flow-step.common-step {
+  background: var(--color-bg);
+  border: 1px dashed var(--color-border);
+}
+
+.flow-step.final-step {
+  font-weight: 700;
+  border: 1.5px solid var(--color-primary);
+  background: rgba(167, 146, 119, 0.05);
+}
+
+.flow-arrow {
+  margin: 10px 0;
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 /* === Pricing === */
 .section-pricing {
   background: var(--color-bg);
